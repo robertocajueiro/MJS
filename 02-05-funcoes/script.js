@@ -1,5 +1,7 @@
-function greet(){
-    console.log('Boa noite!')
+function greet(name = 'Mergulhador'){
+    return 'Bom dia, ' + name
 }
 
-greet()
+var greeting = greet('Roberto')
+
+console.log(greeting)
