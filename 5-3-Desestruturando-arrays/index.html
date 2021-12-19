@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Desestruturando arrays</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        
+        <script>
+            const fruits = ['banana', 'morango', 'manga']
+            //const firstItem = fruits[0]
+           // const secondItem = fruits[1]
+
+           const person =  { name: 'Joaquim', age: 32 }
+           const person2 = { name: 'Jonas', age: 33 }
+           const person3 = { name: 'João', age: 34 }
+
+           //const [firstItem, secondItem] = fruits
+
+           // recupera somente o segundo item usando a virgula
+           //const [, secondItem] = fruits
+
+           const friends = [person, person2, person3]
+
+            //const [, { name }] = friends
+            
+            const chart = [[1, 2], [3, 4], [5, 6]]
+            
+            const [, , [x, y]] = chart 
+
+            
+        </script>
+    </body>
+</html>
