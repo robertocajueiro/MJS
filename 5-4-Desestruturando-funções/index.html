@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desestruturando funções</title>
+</head>
+<body>
+    <script>
+        function createUser ({name, age, email}) {
+            return {
+                name,
+                age,
+                contact: { email }
+            }
+        }
+
+        //const { name } = createUser('Lucas', 32, 'lucas@mail.com')
+
+        const user = createUser({
+            name: 'Lucas',
+            age: 32,
+            email: 'lucas@mail.com' 
+        })
+    </script>
+    
+</body>
+</html>
